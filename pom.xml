@@ -55,6 +55,20 @@
 					<target>${java.version}</target>
 				</configuration>
 			</plugin>
+			<!-- This plugin is used to run the java application using maven command. 
+			e.g. 1) mvn exec:java
+			     2) mvn exec:java -Dexec.mainClass="com.example.Main" [-Dexec.args="argument1"]
+			https://www.mojohaus.org/exec-maven-plugin/usage.html
+			-->
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>exec-maven-plugin</artifactId>
+				<version>1.6.0</version>
+				<configuration>
+					<mainClass>com.makhir.kafka.main.KafkaExample</mainClass>
+				</configuration>
+			</plugin>
+
 		</plugins>
 	</build>
 
