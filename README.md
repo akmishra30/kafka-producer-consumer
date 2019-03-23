@@ -31,7 +31,19 @@ or
 ```bin/kafka-topics.sh --delete --zookeeper localhost:2181 --topic topic-1  ```
 
 ## For more you can refer  
-https://kafka.apache.org/quickstart  
+https://kafka.apache.org/quickstart  AND https://kafka.apache.org/intro.html
+
+![alt Kafka Architecture](https://www.tutorialspoint.com/apache_kafka/images/cluster_architecture.jpg)
+
+![alt Kafka Topic Partition Layout](http://cloudurable.com/images/kafka-architecture-topic-partition-layout-offsets.png)
+
+![alt Kafka Data Replication](http://cloudurable.com/images/kafka-architecture-topics-replication-to-partition-0.png)
+
+## Good Article on Apache Kafka Leader-follower leader election on failover
+
+https://bravenewgeek.com/tag/leader-election/
+
+https://sookocheff.com/post/kafka/kafka-in-a-nutshell/
 
 ## Building kafka-producer-consumer project  
 ```mvn clean install```
