@@ -18,16 +18,26 @@ I have refer following tutorial to install and start the Apache Kafka
 ## Some basic Apache Kafka key commands
 
 1.  Starting ZooKeeper Server   
+
 ```bin/zookeeper-server-start.sh config/zookeeper.properties```
+
 2.  Starting Apache Kafka  
+
 ```bin/kafka-server-start.sh config/server.properties```
+
 3. Command to get topic list from Apache Kafka    
+
 ```bin/kafka-topics.sh --zookeeper localhost:2181 --list ```  
 or  
+
 ```bin/kafka-topics.sh --list --zookeeper localhost:2181```  
+
 4. Command to create topic in Apache Kafka  
+
 ```bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 3 --topic  text-topic```
+
 5. Command to delete topic from kafka
+
 ```bin/kafka-topics.sh --delete --zookeeper localhost:2181 --topic topic-1  ```
 
 ## For more you can refer  
